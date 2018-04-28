@@ -6,6 +6,7 @@ module.exports = {
   rules: {
     'id-blacklist': ['off'],
     'jsx-a11y/href-no-hash': ['off'],
-    'no-magic-numbers': ['off']
+    'no-magic-numbers': ['off'],
+    'no-plusplus': ['off'],
   }
 };

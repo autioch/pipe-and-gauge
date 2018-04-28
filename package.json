@@ -7,9 +7,13 @@
     "lint": "eslint ./src --fix --ext .js",
     "lint:test": "eslint ./spec --fix --ext .js",
     "test": "mocha --reporter=list spec/**/*.spec.js",
-    "test:watch": "mocha --reporter=min --watch spec/**/*.spec.js & exit 0"
+    "test:watch": "mocha --reporter=min --watch spec/**/*.spec.js & exit 0",
+    "example": "webpack --config ./example/src/webpack.config.js --hide-modules"
   },
-  "keywords": ["store", "state"],
+  "keywords": [
+    "store",
+    "state"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Autioch/pipe-and-gauge.git"
@@ -21,7 +25,12 @@
   },
   "homepage": "https://github.com/Autioch/pipe-and-gauge#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "chai": "4.0.2",
     "eslint": "4.8.0",
     "eslint-config-qb": "1.0.0",
@@ -31,7 +40,11 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "mocha": "^3.4.2",
-    "node-jsx": "^0.13.3"
+    "node-jsx": "^0.13.3",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15"
   },
   "peerDependencies": {
     "react": "*",
