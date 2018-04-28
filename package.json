@@ -1,0 +1,40 @@
+{
+  "name": "pipe-and-gauge",
+  "version": "1.0.0",
+  "description": "Yet another state container",
+  "main": "src/index.js",
+  "scripts": {
+    "lint": "eslint ./src --fix --ext .js",
+    "lint:test": "eslint ./spec --fix --ext .js",
+    "test": "mocha --reporter=list spec/**/*.spec.js",
+    "test:watch": "mocha --reporter=min --watch spec/**/*.spec.js & exit 0"
+  },
+  "keywords": ["store", "state"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Autioch/pipe-and-gauge.git"
+  },
+  "author": "https://github.com/Autioch",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Autioch/pipe-and-gauge/issues"
+  },
+  "homepage": "https://github.com/Autioch/pipe-and-gauge#readme",
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "chai": "4.0.2",
+    "eslint": "4.8.0",
+    "eslint-config-qb": "1.0.0",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-flowtype": "^2.46.3",
+    "eslint-plugin-import": "^2.11.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^3.4.2",
+    "node-jsx": "^0.13.3"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  }
+}
