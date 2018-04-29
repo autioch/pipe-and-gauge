@@ -2,13 +2,14 @@
   "name": "pipe-and-gauge",
   "version": "1.0.1",
   "description": "Yet another state container",
-  "main": "src/index.js",
+  "main": "dist/pipeAndGauge.js",
   "scripts": {
     "lint": "eslint ./src --fix --ext .js",
     "lint:test": "eslint ./spec --fix --ext .js",
     "test": "mocha --reporter=list spec/**/*.spec.js",
     "test:watch": "mocha --reporter=min --watch spec/**/*.spec.js & exit 0",
-    "example": "webpack --config ./example/src/webpack.config.js --hide-modules"
+    "example": "webpack --config ./example/src/webpack.config.js --hide-modules",
+    "build": "webpack --config ./webpack.config.js --hide-modules"
   },
   "keywords": [
     "store",
